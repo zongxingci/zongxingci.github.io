@@ -22,27 +22,59 @@
 		<div id="code">
 			<span class="comments">/**</span><br/>
         	<span class="comments"> * @brief 一个真诚的程序员自我介绍</span><br/>	
-			i = Boy(<span class="string">"Xingci Zong"</span>)<br/>
-			<span class="comments"># Hi, girl! Please let </span><br/>
-			i.introduce(me)<br/>
-			<span class="comments"># 我是一名算法工程师,其实就是程序员（手动🐶）</span><br/>
+        	<span class="comments"> * @author Xingci Zong</span><br/>
+        	<span class="comments"> */</span><br/>
+        	i = Boy(<span class="string">"Xingci Zong"</span>);<br/>
+			<span class="comments">// 职业身份声明</span><br/>
+			i.role = AlgorithmEngineer::getInstance(); <span class="comments">// 本质是严选打工人</span><br/>
 			<span class="comments"># 我写代码为了养活自己和自己爱的人，我所在的单位工作强度很大，但是我多工作一天，我所爱的人便能少工作一天。</span><br/>
-			<span class="comments"># 我是一个稍微自律的家伙，这一点从我博士毕业后的体重变化可以看出：</span><br/>
-			(<span class="string">weight&:</span> 75kg to 69kg) <br/>
-			<span class="comments"># 我喜欢新的东西，对我而言有挑战性的东西，也愿意花时间去学，并且乐在其中，这从我工作之后丰富了不少专业技能包可以看出</span><br/>
-			tools.add(<span class="string">scala</span>, <span class="string">java</span>, <span class="string">hive sql</span>, pr(learning...)) <br/>	
-			<span class="comments"># 我性格上的缺点是有点犟和偏执。但是我真的听人劝。人常言，性格是很难改变的，这一点确实如此，但是汲取别人正确的观点，走出自己的舒适区，我认为很重要。</span><br/>
-			<span class="comments"># 我虽然是一个理科生，但是我小的时候喜欢看文学书，侦探类的书，红楼梦和福尔摩斯都陪我消磨了很长的童年时光，但小镇学理才是一个小镇做题家的出路，而且我数学确实还行。</span><br/>
-			<span class="comments"># Hi Kexin姑娘，我对你映像深刻。</span><br/> 
-			<span class="comments"># 如果你对你的另一半颜值要求比较高，那我确实不太适合（除非时光倒流，让我回到大学那会儿）</span><br/> 
-			<span class="comments"># 如果不是，我沟通技巧的欠缺，可能让你对我有误解，我从聊天中对你有所了解，觉得你很好，我觉得这当中应该没有滤镜。我喜欢一个懂技术的女生👸</span><br/> 
-			<span class="comments"># 并不是我比你年纪大，我就比你懂得多（我未不这么认为），这是陈词滥调，迂腐的思想。我想了解你，只是单纯的想了解一下姑娘，我是认真的。</span><br/> 
-			<span class="comments"># 年纪越大懂得越多么？年纪越大越正确么？并非如此，知世故而不世故才是好的。保持一颗初心，积极看待世界。逆风的方向最适合飞翔，这是我很喜欢的一句话的心境。</span><br/> 
-			<span class="comments"># 如果我再年轻一些，我的热情会更加洋溢些。但是社会和现实让我不得不做一个理智人。</span><br/> 
-			<span class="comments"># 关于我以前的感情经历，我并不是一个滥情的家伙，到目前29岁为止只有两段恋爱史。</span><br/>
-			<span class="comments"># 请给我一些了解你的机会，毕竟我们都没怎么正式认识不是么？</span><br/>
-			ps: 我不是大叔，i am a <span class="keyword">young boy</span>,<span class="keyword">really young</span>
-			<span class="comments">##</span><br/>
+			<span class="comments">// 工作信条：多工作一天，所爱之人便能少工作一天</span><br/>
+			<span class="comments">// 个人特质</span><br/>
+        	i.setTrait(<span class="string">"自律"</span>).evidence(<span class="string">"体重曲线"</span>, 75kg >> 69kg);<br/>
+        	i.setTrait(<span class="string">"持续学习"</span>).skills += Seq(<span class="string">"Scala"</span>, <span class="string">"Java"</span>, <span class="string">"HiveQL"</span>, Future(<span class="string">"Premiere"</span>));<br/>
+             <span class="comments">// 性格剖面</span><br/>
+        	PersonalityTrait traits = {<br/>
+            .strength = <span class="string">"执着"</span>,<br/>
+            .weakness = <span class="string">"偶尔偏执"</span>,<br/>
+            .motto = <span class="string">"逆风的方向最适合飞翔"</span><br/>
+        	};<br/>
+			<span class="comments">// 我性格上的缺点是有点犟和偏执。但是我真的听人劝。人常言，性格是很难改变的，这一点确实如此，但是汲取别人正确的观点，走出自己的舒适区，我认为很重要。</span><br/>
+			<span class="comments">// 我虽然是一个理科生，但是我小的时候喜欢看文学书，侦探类的书，红楼梦和福尔摩斯都陪我消磨了很长的童年时光，但小镇学理才是一个小镇做题家的出路，而且我数学确实还行。</span><br/>
+			<span class="comments">// 致Kexin姑娘</span><br/>
+				try {<br/>
+					Girl kexin = i.getCrush();<br/>
+					<span class="comments">/* </span><br/>
+					<span class="comments"> * 你不是我代码中的偶然异常，</span><br/>
+					<span class="comments"> * 而是我精心设计的人生算法中，</span><br/>
+					<span class="comments"> * 那个期待已久的最优解。</span><br/>
+					<span class="comments"> * </span><br/>
+					<span class="comments"> * 若说技术是我们的共同语言，</span><br/>
+					<span class="comments"> * 那么真诚就是我最好的编译器。</span><br/>
+					<span class="comments"> * 年纪越大懂得越多么？年纪越大越正确么？并非如此，知世故而不世故才是好的。</span><br/>
+					<span class="comments"> * 保持一颗初心，积极看待世界。逆风的方向最适合飞翔。</span><br/>
+					<span class="comments"> */</span><br/>
+					<br/>
+					if (!kexin.requires(<span class="string">"高颜值"</span>)) {<br/>
+						i.say(<span class="string">"请给我一个了解你的pull request，"</span> +<br/>
+							<span class="string">"我会用一生的commit来回应。"</span>);<br/>
+					}<br/>
+					<br/>
+					<span class="comments">// 感情经历</span><br/>
+					i.relationshipHistory = Vector(<br/>
+						Relationship(<span class="string">"初恋"</span>, _),<br/>
+						Relationship(<span class="string">"前任"</span>, _)<br/>
+					).take(2);<br/>
+					<br/>
+					<span class="comments">// 郑重声明</span><br/>
+					i.age.assertThat(age => age < 30 && age > 25);<br/>
+					i.say(<span class="string">"I'm young, really young!"</span>);<br/>
+					<br/>
+				} catch (HeartNotReadyException e) {<br/>
+					i.say(<span class="string">"请给我一些了解你的机会，毕竟我们都没怎么正式认识不是么？..."</span>);<br/>
+				}<br/>
+				<span class="comments"># </span><br/>
+				ps: 我不是大叔，i am a <span class="keyword">young boy</span>,<span class="keyword">really young</span>
+				<span class="comments">/** End of Introduction */</span><br/>
 		</div>
 		<div id="loveHeart">
 			<canvas id="garden"></canvas>
