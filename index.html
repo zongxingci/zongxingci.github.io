@@ -10,42 +10,6 @@
 			src: url('digital.ttf') format("truetype");
 		}
 	</style>
-	<style>
-		/* 新增的布局样式 */
-		#mainDiv {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			align-items: flex-start;
-			gap: 40px;
-			padding: 20px;
-			max-width: 1200px;
-			margin: 0 auto;
-		}
-		#content {
-			flex: 1;
-			max-width: 600px;
-		}
-		#loveHeart {
-			flex: 1;
-			max-width: 600px;
-			position: relative;
-		}
-		#copyright {
-			position: fixed;
-			bottom: 10px;
-			width: 100%;
-			text-align: center;
-		}
-		@media (max-width: 768px) {
-			#mainDiv {
-				flex-direction: column;
-			}
-			#content, #loveHeart {
-				max-width: 100%;
-			}
-		}
-	</style>
 	<link href="css/default.css" type="text/css" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/garden.js"></script>
@@ -54,77 +18,77 @@
 
 <body>
 <div id="mainDiv">
-	<div id="content">
-		<div id="code">
-			<span class="comments">/**</span><br/>
-			<span class="comments"> * @brief 一个真诚的程序员自我介绍</span><br/>
-			<span class="comments"> * @author Xingci Zong</span><br/>
-			<span class="comments"> */</span><br/>
-			Boy i(<span class="string">"Xingci Zong"</span>);<br/>
-			<br/>
-			<span class="comments">// 职业身份声明</span><br/>
-			i.role = AlgorithmEngineer::getInstance(); <span class="comments">// 本质是一个年轻人,young</span><br/>
-			<span class="comments">// 工作信条：多工作一天，所爱之人便能少工作一天</span><br/>
-			<br/>
-			<span class="comments">// 个人特质</span><br/>
-			i.setTrait(<span class="string">"自律"</span>).evidence(<span class="string">"体重曲线"</span>, 75kg >> 69kg);<br/>
-			i.setTrait(<span class="string">"持续学习"</span>).skills += Seq(<span class="string">"Scala"</span>, <span class="string">"Java"</span>, <span class="string">"HiveQL"</span>, Future(<span class="string">"Premiere"</span>));<br/>
-			<br/>
-			<span class="comments">// 性格剖面</span><br/>
-			PersonalityTrait traits = {<br/>
-				.strength = <span class="string">"执着"</span>,<br/>
-				.weakness = <span class="string">"偶尔偏执"</span>,<br/>
-				.motto = <span class="string">"逆风的方向最适合飞翔"</span><br/>
-			};<br/>
-			<br/>
-			<span class="comments">// 致Kexin姑娘</span><br/>
-			try {<br/>
-				Girl kexin = i.getCrush();<br/>
-				<span class="comments">/* </span><br/>
-				<span class="comments"> * 你不是我代码中的偶然异常，</span><br/>
-				<span class="comments"> * 而是我精心设计的人生算法中，</span><br/>
-				<span class="comments"> * 那个期待已久的最优解。</span><br/>
-				<span class="comments"> * </span><br/>
-				<span class="comments"> * 若说技术是我们的共同语言，</span><br/>
-				<span class="comments"> * 那么真诚就是我最好的编译器。</span><br/>
-				<span class="comments"> * 年龄只是无意义的版本号，</span><br/>
-				<span class="comments"> * 重要的是代码背后的思想。</span><br/>
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br/>
+				<span class="comments"> * @brief 一个真诚的程序员自我介绍</span><br/>
+				<span class="comments"> * @author Xingci Zong</span><br/>
 				<span class="comments"> */</span><br/>
+				Boy i(<span class="string">"Xingci Zong"</span>);<br/>
 				<br/>
-				if (!kexin.requires(<span class="string">"高颜值"</span>)) {<br/>
-					i.say(<span class="string">"请给我一个了解你的pull request，"</span> +<br/>
-						<span class="string">"我会用一生的commit来回应。"</span>);<br/>
+				<span class="comments">// 职业身份声明</span><br/>
+				i.role = AlgorithmEngineer::getInstance(); <span class="comments">// 本质是一个young boy</span><br/>
+				<span class="comments">// 工作信条：多工作一天，所爱之人便能少工作一天</span><br/>
+				<br/>
+				<span class="comments">// 个人特质</span><br/>
+				i.setTrait(<span class="string">"自律"</span>).evidence(<span class="string">"体重曲线"</span>, 75kg >> 69kg);<br/>
+				i.setTrait(<span class="string">"持续学习"</span>).skills += Seq(<span class="string">"Scala"</span>, <span class="string">"Java"</span>, <span class="string">"HiveQL"</span>, Future(<span class="string">"Premiere"</span>));<br/>
+				<br/>
+				<span class="comments">// 性格剖面</span><br/>
+				PersonalityTrait traits = {<br/>
+					.strength = <span class="string">"执着"</span>,<br/>
+					.weakness = <span class="string">"偶尔偏执"</span>,<br/>
+					.motto = <span class="string">"逆风的方向最适合飞翔"</span><br/>
+				};<br/>
+				<br/>
+				<span class="comments">// 致Kexin姑娘</span><br/>
+				try {<br/>
+					Girl kexin = i.getCrush();<br/>
+					<span class="comments">/* </span><br/>
+					<span class="comments"> * 你不是我代码中的偶然异常，</span><br/>
+					<span class="comments"> * 而是我精心设计的人生算法中，</span><br/>
+					<span class="comments"> * 那个期待已久的最优解。</span><br/>
+					<span class="comments"> * </span><br/>
+					<span class="comments"> * 若说技术是我们的共同语言，</span><br/>
+					<span class="comments"> * 那么真诚就是我最好的编译器。</span><br/>
+					<span class="comments"> * 年龄只是无意义的版本号，</span><br/>
+					<span class="comments"> * 重要的是代码背后的思想。</span><br/>
+					<span class="comments"> */</span><br/>
+					<br/>
+					if (!kexin.requires(<span class="string">"高颜值"</span>)) {<br/>
+						i.say(<span class="string">"请给我一个了解你的pull request，"</span> +<br/>
+							<span class="string">"我会用一生的commit来回应。"</span>);<br/>
+					}<br/>
+					<br/>
+					<span class="comments">// 感情经历</span><br/>
+					i.relationshipHistory = Vector(<br/>
+						Relationship(<span class="string">"初恋"</span>, _),<br/>
+						Relationship(<span class="string">"前任"</span>, _)<br/>
+					).take(2);<br/>
+					<br/>
+					<span class="comments">// 郑重声明</span><br/>
+					i.age.assertThat(age => age < 30 && age > 25);<br/>
+					i.say(<span class="string">"I'm young, really young!"</span>);<br/>
+					<br/>
+				} catch (HeartNotReadyException e) {<br/>
+					i.say(<span class="string">"让我们从hello world开始..."</span>);<br/>
 				}<br/>
-				<br/>
-				<span class="comments">// 感情经历</span><br/>
-				i.relationshipHistory = Vector(<br/>
-					Relationship(<span class="string">"初恋"</span>, _),<br/>
-					Relationship(<span class="string">"前任"</span>, _)<br/>
-				).take(2);<br/>
-				<br/>
-				<span class="comments">// 郑重声明</span><br/>
-				i.age.assertThat(age => age < 30 && age > 25);<br/>
-				i.say(<span class="string">"I'm young, really young!"</span>);<br/>
-				<br/>
-			} catch (HeartNotReadyException e) {<br/>
-				i.say(<span class="string">"让我们从hello world开始..."</span>);<br/>
-			}<br/>
-			<span class="comments">/** End of Introduction */</span><br/>
-		</div>
-	</div>
-	<div id="loveHeart">
-		<canvas id="garden"></canvas>
-		<div id="words">
-			<div id="messages">
-				Hi, Kexin Yao, we have known each other
-				<div id="elapseClock"></div>
-			</div>
-			<div id="loveu">
-				I beg more chances to know you <br/>
-				<div class="signature"> Sincerely, Xinci Zong </div>
+				<span class="comments">/** End of Introduction */</span><br/>
 			</div>
 		</div>
-	</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Hi, Kexin Yao, we have known each other
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I beg more chances to know you <br/>
+					<div class="signature"> Sincerely, Xinci Zong </div>
+				</div>
+			</div>
+		</div>
 	<div id="copyright">
 		Copyright © 2025 <a href='https://zongxingci.github.io/'>zongxingci.github.io</a> 2025-2028
 	</div>
